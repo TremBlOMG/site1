@@ -1,0 +1,101 @@
+[
+    {
+        "id": 1,
+        "title": "IPhone 11 (256)",
+        "price": 1499.99,
+        "prom": true,
+        "category": 1,
+        "category_text": "Телефоны",
+        "rate": 3,
+        "desc": "Отличный телефон и это его описание!",
+        "img": "1.jpg"
+    },
+    {
+        "id": 2,
+        "title": "IPhone 12 (64)",
+        "price": 2499.00,
+        "prom": false,
+        "category": 1,
+        "category_text": "Телефоны",
+        "rate": 5,
+        "desc": "Отличный телефон и это его описание #2!",
+        "img": "2.jpg"
+    },
+    {
+        "id": 3,
+        "title": "Samsung Galaxy A52",
+        "price": 2000.01,
+        "prom": false,
+        "category": 1,
+        "category_text": "Телефоны",
+        "rate": 5,
+        "desc": "Отличный телефон и это его описание #3!",
+        "img": "3.jpg"
+    },
+    {
+        "id": 4,
+        "title": "ASUS ZenBook 14",
+        "price": 1399.00,
+        "prom": true,
+        "category": 2,
+        "category_text": "Компьютеры",
+        "rate": 2,
+        "desc": "Отличный ноутбук и это его описание!",
+        "img": "4.jpg"
+    },
+    {
+        "id": 5,
+        "title": "ACER Nitro 5",
+        "price": 2199.99,
+        "prom": false,
+        "category": 2,
+        "category_text": "Компьютеры",
+        "rate": 3,
+        "desc": "Отличный ноутбук и это его описание #2!",
+        "img": "5.jpg"
+    },
+    {
+        "id": 6,
+        "title": "HP Pavilion Aero",
+        "price": 999.99,
+        "prom": false,
+        "category": 2,
+        "category_text": "Компьютеры",
+        "rate": 3,
+        "desc": "Отличный ноутбук и это его описание #3!",
+        "img": "6.jpg"
+    },
+    {
+        "id": 7,
+        "title": "Apple AirPods",
+        "price": 420.99,
+        "prom": true,
+        "category": 3,
+        "category_text": "Наушники",
+        "rate": 5,
+        "desc": "Отличные наушники и это их описание!",
+        "img": "7.jpg"
+    },
+    {
+        "id": 8,
+        "title": "Apple AirPods 3",
+        "price": 500.00,
+        "prom": false,
+        "category": 3,
+        "category_text": "Наушники",
+        "rate": 5,
+        "desc": "Отличные наушники и это их описание #2!",
+        "img": "8.jpg"
+    },
+    {
+        "id": 9,
+        "title": "Apple AirPods 3 (Б/У)",
+        "price": 400.99,
+        "prom": false,
+        "category": 3,
+        "category_text": "Наушники",
+        "rate": 4.5,
+        "desc": "Отличные наушники и это их описание #3!",
+        "img": "8.jpg"
+    }
+]
