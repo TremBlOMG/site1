@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TechShop</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="assets/logo.png" alt="logo">
+        </div>
+        <nav>
+            <ul>
+                <li class="li_search">
+                    <input type="text" id="search_text" placeholder="Название товара...">
+                    <button id="search"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </li>
+                <li class="sub-menu"><a>Категории</a>
+                    <ul>
+                        <li><a href="#cat0">Акции</a></li>
+                        <li><a href="#cat1">Телефоны</a></li>
+                        <li><a href="#cat2">Компьютеры</a></li>
+                        <li><a href="#cat3">Наушники</a></li>
+                    </ul>
+                </li>
+                <li class="sub-menu"><a>Медиа</a>
+                    <ul>
+                        <li id="audioPlay"><a>Включить аудио</a></li>
+                        <li id="audioStop"><a>Выключить аудио</a></li>
+                        <li onclick="$('#videomodal').css('display', 'flex');"><a>Видео</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Новинки</a></li>
+                <li><a href="#">Акции</a></li>
+                <li><a href="#">Про нас</a></li>
+                <li><a class="cart"><i class="fa-solid fa-cart-flatbed"></i><small id="cartAmount">0 <i class="fa-solid fa-dollar-sign"></i></small></a></li>
+            </ul>
+        </nav>
+        <div class="menu-toggle">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+        </div>
+    </header>
+    <div style="width:100%;height: 800px;">
+        <div class="slider">
+            <a href="#0" class="next control"><i class="fa-solid fa-arrow-right"></i></a>
+            <a href="#0" class="prev control"><i class="fa-solid fa-arrow-left"></i></a>
+            <ul>
+                <li class="c">
+                    <img src="assets/1.jpg" alt="first">
+                </li>
+                <li class="r">
+                    <img src="assets/2.jpg" alt="second">
+                </li>
+                <li class="g">
+                    <img src="assets/3.jpg" alt="third">
+                </li>
+                <li class="b">
+                    <img src="assets/4.jpg" alt="fourth">
+                </li>
+            </ul>
+            <div class="slider_option">
+                <Button class="btn">Autoplay</Button>
+            </div>
+        </div>
+    </div>
+    <div class="styled_clearfix">
+        <span>Общее</span>
+    </div>
+    <div style="margin: 15px 0;">
+        <span>Средний рейтинг товаров: <span id="srait">0</span> <i class="fa-solid fa-star"></i></span><br>
+        <span>Погода в городе Киев (местоположение магазина): <span id="temp">0</span> <i class="fa-solid fa-temperature-full"></i></span>
+    </div>
+    <div class="styled_clearfix" id="search_title" style="display: none">
+        <span>Результаты поиска</span><br>
+        <button style="background-color: transparent;outline: none;border:1px solid #323232; cursor: pointer;" id="ressearch">Сбросить</button>
+    </div>
+    <div class="product_list" id="cat00" style="display: none;"></div>
+    <div class="styled_clearfix">
+        <span>Акции</span>
+    </div>
+    <div class="product_list" id="cat0"></div>
+    <div class="styled_clearfix">
+        <span>Телефоны</span>
+    </div>
+    <div class="product_list" id="cat1"></div>
+    <div class="styled_clearfix">
+        <span>Компьютеры</span>
+    </div>
+    <div class="product_list" id="cat2"></div>
+    <div class="styled_clearfix">
+        <span>Наушники</span>
+    </div>
+    <div class="product_list" id="cat3"></div>
+    <footer>
+        <div class="left">TechShop Comp. &copy; All rights reserved.</div>
+        <div class="right">
+            <i class="fa-brands fa-facebook" id="facebook"></i>
+            <i class="fa-brands fa-instagram" id="instagram"></i>
+        </div>
+    </footer>
+    <div class="modal" id="modal">
+        <div class="modal_content">
+            <div class="title" id="modtitle"></div>
+            <div class="desc" id="moddesc"></div>
+            <div class="price" id="modprice"><i class="fa-solid fa-dollar-sign"></i></div>
+            <div class="prm" id="modprm"></div>
+            <button onclick="$('#modal').hide()">Закрыть</button>
+        </div>
+    </div>
+    <div class="modal" id="videomodal">
+        <div class="modal_content">
+            <video width="500" height="340" id="videoCont">
+                <source src="assets/video.mp4" type="video/mp4">
+                Error Message
+            </video>
+            <button onclick="$('#videoCont').get(0).play()">Старт</button>
+            <button onclick="$('#videoCont').get(0).pause()">Пауза</button>
+            <button onclick="$('#videomodal').hide()">Закрыть</button>
+        </div>
+    </div>
+    <div class="scroller" id="scroller"><i class="fa-solid fa-up-long"></i></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
